@@ -7,5 +7,7 @@ Route::get('/', function () {
 });
 
 route:: resource('falkultas', falkultascontroller::class);
+route:: resource('periode', periodecontroller::class);
+
 
 
