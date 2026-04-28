@@ -1,13 +1,15 @@
 <?php
 
+use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\PeriodeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-route:: resource('falkultas', falkultascontroller::class);
-route:: resource('periode', periodecontroller::class);
+route:: resource('fakultas', FakultasController::class);
+route:: resource('periode', PeriodeController::class);
 
 
 

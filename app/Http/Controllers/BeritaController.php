@@ -2,24 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\fakultas;
+use App\Models\berita;
 use Illuminate\Http\Request;
 
-class FakultasController extends Controller
+class BeritaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // akses model falkultas
-        $result = fakultas ::all();
-        // dd($result);
-        // kirim data fakultas ke view menggunakan with
-        // return view(fakultas.index)->wuith('fakultas',$result);
-        return view('fakultas.index', compact('result'));
-
-
+        //
     }
 
     /**
@@ -41,7 +34,7 @@ class FakultasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(fakultas $fakultas)
+    public function show(berita $berita)
     {
         //
     }
@@ -49,7 +42,7 @@ class FakultasController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(fakultas $fakultas)
+    public function edit(berita $berita)
     {
         //
     }
@@ -57,7 +50,7 @@ class FakultasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, fakultas $fakultas)
+    public function update(Request $request, berita $berita)
     {
         //
     }
@@ -65,7 +58,7 @@ class FakultasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(fakultas $fakultas)
+    public function destroy(berita $berita)
     {
         //
     }
