@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('beritas', function (Blueprint $table) {
+        Schema::create('periodes', function (Blueprint $table) {
             $table->id();
+            $table->char('tahun_akademik', 9);
+            $table->char('semester', 1);
             $table->timestamps();
         });
     }
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('beritas');
+        Schema::dropIfExists('periodes');
     }
 };

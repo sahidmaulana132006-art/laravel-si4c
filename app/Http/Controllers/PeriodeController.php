@@ -12,11 +12,11 @@ class PeriodeController extends Controller
      */
     public function index()
     {
-        // akses model periode 
-        $result = periode::all();
-
-        //select * from periode 
-        dd($result);
+        // akses model Periode
+        $result = Periode::all(); // select * from periode 
+        // dd($result); // dump data 
+        // kirim data periode ke view
+        return view('periode.index', compact('result'));
     }
 
     /**

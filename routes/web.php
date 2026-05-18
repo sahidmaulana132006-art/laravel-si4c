@@ -8,8 +8,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route:: resource('fakultas', FakultasController::class);
-route:: resource('periode', PeriodeController::class);
-
-
-
+Route::resource('fakultas', FakultasController::class);
+Route::resource('periode', PeriodeController::class);

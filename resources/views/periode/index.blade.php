@@ -1,4 +1,4 @@
-<h2>Data periode</h2>
+<h2>Data Periode</h2>
 @foreach ($result as $item)
-{{ $item->tahun_akademik }} - {{ $item kode_smt }} <br/>
-    @endforeach
+    {{ $item->tahun_akademik }} - {{ $item->semester }} <br />
+@endforeach

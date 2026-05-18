@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('periodes', function (Blueprint $table) {
+        Schema::create('fakultas', function (Blueprint $table) {
             $table->id();
-            $table->string('tahun_akademik', 9);
-            $table->char('kode_semester', 1);
+            $table->string('nama', 50);
+            $table->string('dekan', 30);
+            $table->char('singkatan', 4);
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('periodes');
+        Schema::dropIfExists('fakultas');
     }
 };
